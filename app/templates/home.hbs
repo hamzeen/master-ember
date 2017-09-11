@@ -1,0 +1,59 @@
+<div class="row result-wrapper clearfix">
+   <div class="col s12">
+      <div class="row">
+         <div class="rbc rbc-resultcard">
+            <div class="rbc-resultcard-container card thumbnail rbc-title-inactive rbc-sort-inactive rbc-stream-inactive rbc-placeholder-inactive rbc-initialloader-inactive rbc-resultstats-active rbc-noresults-inactive rbc-pagination-active">
+               <div class="rbc rbc-resultstats col s12 col-xs-12">
+                 Super Rentals Search
+                 {{input value=filterText type='text' placeholder='Search City'}}
+
+                   {{#unless filteredResults.length}}
+                     <h4>no record matched your criteria</h4>
+                   {{/unless}}
+
+                  {{filteredResults.length}} results found in 12 ms
+               </div>
+               <div class="rbc-resultcard-scroll-container col s12 col-xs-12" style="height: auto; padding-bottom: 0px;">
+                 <!-- iterate cards //-->
+                 {{#each filteredResults as |item|}}
+                 <a class="rbc-resultcard-item rbc-image-active" href="https://www.superrental.com/rooms/7750477" rel="noopener noreferrer">
+                    <div>
+                       <div class="rbc-resultcard-item__image" style="background-image: url({{item.attributes.image}});"></div>
+                       <div class="rbc-resultcard-item__title">{{item.attributes.city}}</div>
+                       <div class="rbc-resultcard-item__desc">
+                          <div>
+                             <div class="price">
+                                {{item.attributes.title}}
+                             </div>
+                             <span class="host" style="background-image: url(&quot;https://a0.muscache.com/ac/users/40746071/profile_pic/1438918804/original.jpg?interpolation=lanczos-none&amp;crop=w:w;*,*&amp;crop=h:h;*,*&amp;resize=50:*&amp;output-format=jpg&amp;output-quality=70&quot;);"></span>
+                             <p>{{item.type}} · {{item.attributes.owner}}</p>
+                          </div>
+                       </div>
+                    </div>
+                 </a>
+                 {{/each}}
+                 <!-- iterate cards //-->
+               </div>
+
+               <!-- pagination //-->
+               <div class="rbc-pagination-container col s12 col-xs-12">
+                  <div class="rbc rbc-pagination col s12 col-xs-12 rbc-title-inactive rbc-pagination-bottom">
+                     <div class="col s12 col-xs-12">
+                        <ul class="pagination">
+                           <li class="disabled"><a class="rbc-page-previous"><i class="fa fa-angle-left"></i></a></li>
+                           <li class="rbc-page-number active rbc-pagination-active"><a>1</a></li>
+                           <li class="disabled"><a class="rbc-page-next"><i class="fa fa-angle-right"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div style="display: block;">
+              <a href="#" target="_blank" class="rbc rbc-poweredby">Hamzeen. H.</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+{{outlet}}

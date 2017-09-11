@@ -1,0 +1,20 @@
+{{outlet}}
+
+  <h2>Add Listing</h2><hr/>
+
+
+  {{#each attachments as |uploadRow index|}}
+
+    	<div id={{uploadRow.id}}>
+    		{{uploadRow.id}}.
+        <input style="opacity:0.5"
+          onchange={{action "upload"}} accept="image/png,image/jpeg" type="file"/>
+
+    		{{uploadRow.fileName}}
+        <img src={{uploadRow.imgData}} width="300px" height="220px"/>
+        <input type=checkbox checked={{uploadRow.isOn}}><br/>
+    	</div>
+    {{/each}}
+
+
+    <button {{action "moreFields"}}> More Files </button>
