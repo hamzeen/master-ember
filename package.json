@@ -4,7 +4,7 @@
   "private": true,
   "description": "ember super rentals with a responsive UI",
   "license": "MIT",
-  "author": "",
+  "author": "hamzeen",
   "directories": {
     "doc": "doc",
     "test": "tests"
