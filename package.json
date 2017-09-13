@@ -1,8 +1,8 @@
 {
-  "name": "ember-super-rentals",
+  "name": "master-ember",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for master-ember goes here",
+  "description": "ember super rentals with a responsive UI",
   "license": "MIT",
   "author": "",
   "directories": {
