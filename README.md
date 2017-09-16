@@ -1,7 +1,7 @@
 # master-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here. [static preview](https://codepen.io/hamzeen/full/PJPNBr)
+the good old ember super rentals with better look and feel [static preview](https://codepen.io/hamzeen/full/PJPNBr)
+![https://github.com/hamzeen/master-ember/raw/master/public/screen.jpg](https://github.com/hamzeen/master-ember/raw/master/public/screen.jpg)
 
 ## Prerequisites
 
