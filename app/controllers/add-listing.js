@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
 
    actions: {
        moreFields: function() {
-          console.log(this.get('attachments'));
+          // console.log(this.get('attachments'));
            if(this.get('attachments').length > 4) {
                alert('Maximum 5 Rows only');
            } else {

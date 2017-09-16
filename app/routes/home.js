@@ -36,7 +36,7 @@ export default Ember.Route.extend({
             results.addObject(deal);
           });
         } else if(data.data === 'no records found'){
-          console.log('No results found');
+          // console.log('No results found');
         } else {
           data.data.forEach(function(deal) {
             results.addObject(deal);
@@ -45,7 +45,7 @@ export default Ember.Route.extend({
       },
 
       error: function() {
-        console.log('DEBUG: GET Deals Failed');
+        // console.log('DEBUG: GET Deals Failed');
       },async:false
     });
     return results;

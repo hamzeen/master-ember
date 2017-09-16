@@ -24,11 +24,11 @@ export default Ember.Controller.extend({
 
   applyFilter: function() {
     this.set('filter', this.get('filterText'));
-    console.log('filter set: ' + this.get('filter'));
+    // console.log('filter set: ' + this.get('filter'));
   },
 
   filteredResults: function() {
-    var filter = this.get('filter');
+    // var filter = this.get('filter');
     return this.get('model');
 
     /*return this.get('model').filter(function(item) {
