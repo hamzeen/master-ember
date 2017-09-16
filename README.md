@@ -1,6 +1,7 @@
 # master-ember
 
 the good old ember super rentals with better look and feel [static preview](https://codepen.io/hamzeen/full/PJPNBr)
+
 ![https://github.com/hamzeen/master-ember/raw/master/public/screen.jpeg](https://github.com/hamzeen/master-ember/raw/master/public/screen.jpeg)
 
 ## Prerequisites
