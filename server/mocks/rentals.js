@@ -38,8 +38,19 @@ module.exports = function(app) {
           bedrooms: 3,
           image: 'https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg'
         }
+      }, {
+        type: 'Private room',
+        id: 3,
+        attributes: {
+          title: 'House with a view',
+          owner: 'Sofia De la Cruz',
+          city: 'Michigan',
+          type: 'Apartment',
+          bedrooms: 1,
+          image: 'https://a2.muscache.com/im/pictures/90842296/10d4b096_original.jpg?aki_policy=medium'
+        }
       }
-    ];
+  ];
 
   rentalsRouter.get('/', function(req, res) {
     res.send({rentals});
